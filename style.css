@@ -1,0 +1,372 @@
+/* Global Styling */
+*, html, body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header and Navigation */
+/* Header */
+header {
+    background: #161b22;
+    color:#eaeaea;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .5s  ease 0s;
+}
+.logo:hover {
+    color: #ff6a3d;
+    transform: rotate(2deg);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.nav-button {
+    margin: 0 15px;
+    
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #58a6ff;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #0d1117;
+    background: linear-gradient(to right,#0d1117, #161b22);
+}
+
+.hero-content {
+    text-align: left;
+    color: #eaeaea;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-top: 50px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    color: #58a6ff;
+}
+
+.hero-content p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+.im {
+    color: #eaeaea;
+    font-size: 1.2rem;
+}
+
+/* Styling untuk social icons */
+.social-icons {
+    display: flex;
+    text-align: left;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    color: #eaeaea; /* Warna default */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect dengan warna khas platform */
+.social-icons a[aria-label="Instagram"]:hover {
+    color: #E1306C; /* Warna khas Instagram */
+}
+
+.social-icons a[aria-label="TikTok"]:hover {
+    color: rgb(103, 186, 188); /* Warna khas TikTok */
+}
+
+.social-icons a[aria-label="Facebook"]:hover {
+    color: #1877F2; /* Warna khas Facebook */
+}
+
+.social-icons a[aria-label="WhatsApp"]:hover {
+    color: #25D366; /* Warna khas WhatsApp */
+}
+
+/* Animasi zoom */
+.social-icons a:hover {
+    transform: scale(1.2); /* Efek zoom */
+}
+/* Profile Picture */
+.profile-pic img {
+    border-radius: 50%;
+    border: 5px solid #58a6ff;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 20px 5px #58a6ff;
+    transition: transform 0.3s;
+    animation: scaleUp 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }to {
+         opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.profile-pic img:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    display: inline-block;
+    margin: 50px 5px;
+    padding: 10px 20px;
+    background-color: #58a6ff;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #36a3f5;
+    transform: translateY(-3px);
+}
+
+/* Existing styles... */
+
+nav {
+    text-align: center; /* Center the buttons */
+    margin: 20px 0; /* Add some margin */
+}
+
+.nav-button {
+    background-color: transparent; /* Transparent background */
+    color: #eaeaea; /* Text color */
+    padding: 0px 10px; /* Padding */
+    border:none;
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    margin: 0 10px; /* Space between buttons */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.nav-button:hover {
+    color: #eaeaea;
+    transform: rotate(2deg);
+
+}
+
+/* Existing styles... */
+
+/* Existing styles... */
+
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.description{
+    font-size: 28px;
+    font-weight: bolder;
+}
+/* About Section */
+.about {
+    background: #161b22;
+    color: #eaeaea;
+    padding: 50px;
+    text-align: center;
+.title {
+    font-size:  2.5rem;
+    margin-bottom: 20px;
+    color: #58a6ff;
+}
+.description {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        line-height: 1.6;
+}
+
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Projects Section */
+#projects {
+    background: #161b22;
+    color: #eaeaea;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+#contact {
+    background: #161b22;
+    color: #eaeaea;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin:0 auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #36a3f5;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff6a3d;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+.typewriter {
+    margin-left: 5px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    border-right: 0.15em solid #eaeaea;
+    color: #58a6ff;
+    white-space: nowrap;
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #58a6ff; }
+}
+
+/* Styles for mobile devices (smaller screens) */
+@media only screen and (max-width: 600px) {
+    .container {
+      width: 90%; /* Adjust width for mobile */
+      margin: 0 auto; /* Center content */
+    }
+  
+    h1 {
+      font-size: 2em; /* Reduce heading size */
+    }
+  }
+  
+  /* Styles for larger screens */
+  @media only screen and (min-width: 768px) {
+    .container {
+      width: 70%; /* Adjust width for tablets and desktops */
+    }
+}
+    h1 {
+      font-size: 3em;
+     } /*
+
+ 
