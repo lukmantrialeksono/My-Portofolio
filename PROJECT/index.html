@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUKMAN TL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">My Portofolio</h1>
+        <nav>
+            <ul>
+                <button class="nav-button" onclick="location.href='#home'">HOME</button>
+                <button class="nav-button" onclick="location.href='#about'">ABOUT</button>
+                <button class="nav-button" onclick="location.href='#projects'">PROJECT</button>
+                <button class="nav-button" onclick="location.href='#contact'">KONTAK</button>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p>Hello, it's me</p>
+            <h1>Lukman Tria Leksono</h1>
+            <p><span class="im"> I'm a</span> <span class="typewriter"> Frontend Developer </span></p>
+            <p>I'm an informatics student of university of Terbuka Purwokerto who likes design and technology</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/tlukman_/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@tl.lukman" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com/Tl Tl" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://wa.me/6285642574428" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <a href="#about" class="btn">More About Me</a>
+        
+         
+        </div>
+        <div class="profile-pic">
+            <img src="hero.jpg" alt="Profile picture">
+        </div>
+    </section>
+
+    <section id="about">
+   <div class="about">
+        <div class="tentang">
+        <p class="title">WELCOME</p>
+        <p class="description">Hello! I am <b>Lukman Tria Leksono</b>, a <b>Frontend Developer</b> who has a passion for technology and design. With an educational background at the  <b>Universitas Terbuka</b> Purwokerto. I continue to develop skills in building interactive, responsive and user-friendly websites. I believe that every good code has a story, and I always strive to create innovative and efficient solutions. If you are looking for a developer who is dedicated and ready to collaborate, let's discuss your project further! </p></div>
+   </div>
+    </section>
+    
+    <section id="projects">
+        <div class="project-grid">
+            <div class="project">
+                <h3>Project 1</h3>
+                <a href="https://lukmantrialeksono.github.io/R-TAILOR/" target="_blank">
+                    <img src="1.jpg" alt="1.jpg" width="300">
+                </a>
+                
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Short description of the project.</p>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Short description of the project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Hubungi Kami</h2>
+    <form id="contactForm" action="send_email.php" method="POST">
+        <label for="nama">Name:</label>
+        <input type="text" id="nama" name="nama" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="pesan">Message:</label>
+        <textarea id="pesan" name="pesan" required></textarea><br>
+
+        <button type="submit">Send HERE</button>
+    </form>
+        <p id="responseMessage"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lukman Tria Leksono. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
